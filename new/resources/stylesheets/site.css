@@ -57,7 +57,7 @@ body {
 }
 
 .experience {
-	width: 100vh;
+	width: 90vh;
     margin: 0 auto;
     text-align: left;
 }
@@ -73,6 +73,12 @@ body {
     display: inline-block;
     height: 100%;
     vertical-align: top;
+}
+
+@media screen and (max-width: 400px) {
+   .helper { 
+    display: none;   
+  }
 }
 
 .experience-title {
@@ -119,7 +125,7 @@ body {
 .intro {
     height: auto;
     background-color:whitesmoke;
-    font-size:1rem;
+    font-size:1.5vh;
     padding: 10px;
     text-align: center;
 }
