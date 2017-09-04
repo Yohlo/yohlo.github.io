@@ -57,7 +57,7 @@ body {
 }
 
 .experience {
-	width: 50em;
+	width: 100vh;
     margin: 0 auto;
     text-align: left;
 }
@@ -76,8 +76,8 @@ body {
 }
 
 .experience-title {
-    margin-top: -0.75em;
-    margin-bottom: -0.75em;
+    margin-top: -0.75rem;
+    margin-bottom: -0.75rem;
 }
 
 .experience-info {
@@ -90,7 +90,7 @@ body {
 .work-info {
     display: inline-block;
     width: 62%;
-    padding-left: 2em;
+    padding-left: 2rem;
 }
 
 .date {
@@ -125,7 +125,7 @@ body {
 }
 
 .intro p {
-    width: 35em;
+    width: 60vh;
     margin: 0 auto;
     margin-top: 1em;
     margin-bottom: 1em;
