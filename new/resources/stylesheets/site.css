@@ -1,0 +1,208 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  /*font-family: 'Roboto', sans-serif;*/
+  font-family: 'Varela Round', sans-serif;
+}
+
+/* *** *** *** */
+/*             */
+/*  Parallax   */
+/*             */
+/* *** *** *** */
+
+.parallax {
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    display: table;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.parallax-content {
+    width: 100%;
+    margin: 0 auto;
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+}
+
+#main-name {
+    text-shadow: 4px 4px 4px #000000;
+    font-size: 8vh;
+    color: white;
+}
+
+/* HEADER */
+.header {
+    width: 50vh;
+    margin: 0 auto; 
+    height: 2vh; 
+    border-bottom: 2px solid black; 
+    text-align: center
+}
+
+.name {
+    font-size: 4vh; 
+    background-color: #F3F5F6;
+    padding: 0 10px;
+}
+
+.name-label {
+    color: #678;
+    padding-top: .5rem;
+}
+
+.experience {
+	width: 50em;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.experience-image {
+    height: 20vh;
+    width: auto;
+    border-radius: 50%;
+    vertical-align: top;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+}
+
+.experience-title {
+    margin-top: -0.75em;
+    margin-bottom: -0.75em;
+}
+
+.experience-info {
+    margin: auto;
+    vertical-align: middle;
+    text-align: left;
+    font-size: 1.5vh;
+}
+
+.work-info {
+    display: inline-block;
+    width: 62%;
+    padding-left: 2em;
+}
+
+.date {
+    font-size: small;
+    font-style: italic;
+}
+
+/* *** *** *** */
+/*             */
+/*     Work    */
+/*             */
+/* *** *** *** */
+
+.work-name {
+    text-shadow: 4px 4px 4px #000000;
+    font-size: 2rem;
+    color: white;
+}
+
+/* *** *** *** */
+/*             */
+/*    Intro    */
+/*             */
+/* *** *** *** */
+
+.intro {
+    height: auto;
+    background-color:whitesmoke;
+    font-size:1rem;
+    padding: 10px;
+    text-align: center;
+}
+
+.intro p {
+    width: 35em;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.profile-pic {
+    width:30vh;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+
+
+/* *** *** *** */
+/*             */
+/*  Experience */
+/*             */
+/* *** *** *** */
+
+.experience-card {
+    width: 40vh;
+    height: 20vh;
+    padding: 20px;
+    display: inline-block;
+	font-size: 1.75vh;
+}
+
+.experience-card:hover {
+    box-shadow: 2px 2px 5px 0px gray;
+    cursor: pointer;
+}
+
+.no-hover:hover {
+    box-shadow: none !important;
+    cursor: unset !important;
+}
+
+#experience-table {
+    min-width: 90vh;
+    background-color: whitesmoke;
+    padding-bottom: 4vh;
+    padding-top: 4vh;
+	margin: 0 auto;
+}
+
+#experience-table tr {
+    margin: auto;
+    min-width: 100%;
+}
+
+#experience-table tr td {
+    margin: 5vh;
+    margin-bottom: 1vh !important;
+    margin-top: 1vh !important;
+}
+
+.experience-description {
+	width: 75%;
+	margin: 0 auto;
+	background-color: white;
+	height: 30vh;
+	font-size: 1.75vh;
+	display: table; 
+}
+
+.experience-description h3 {
+	width: 10%;
+	margin: 0 auto;
+}
+
+.experience-description p {
+	vertical-align: middle;
+	display: table-cell;
+}
+
+
+
+
+
