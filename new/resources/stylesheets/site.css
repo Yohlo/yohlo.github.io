@@ -63,30 +63,15 @@ body {
 }
 
 .experience-image {
-    height: 15rem;
-    width: auto;
+    width: 15rem;
+    height: auto;
     border-radius: 50%;
-    vertical-align: top;
 }
 
 .helper {
     display: inline-block;
     height: 100%;
     vertical-align: top;
-}
-
-@media screen and (max-width: 400px) {
-   .helper { 
-    display: none;   
-  }
-  .experience-image {
-      width: 80%;
-      margin: 0 auto;
-  }
-  .experience-info {
-      width: 80%;
-      margin: 0 auto;
-  }
 }
 
 .experience-title {
@@ -110,6 +95,44 @@ body {
 .date {
     font-size: small;
     font-style: italic;
+}
+
+.experience-wrapper {
+  overflow:hidden;
+  width: 75vw;
+  margin: 0 auto;
+}
+
+.experience-wrapper div {
+   min-height: 200px;
+   padding: 10px;
+}
+
+.one {
+  float:left; 
+  margin-right:20px;
+}
+.two { 
+  overflow:hidden;
+  margin:10px;
+  min-height:170px;
+}
+
+@media screen and (max-width: 700px) {
+   .one { 
+    float: none;
+    margin-right:0;
+    width:auto;
+    border:0;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #000;    
+  }
+  .experience-image {
+    width: 60%;
+    height: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+    }
 }
 
 /* *** *** *** */
@@ -139,7 +162,7 @@ body {
 }
 
 .intro p {
-    width: 40vw;
+    width: 35vw;
     margin: 0 auto;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -216,7 +239,11 @@ body {
 	display: table-cell;
 }
 
-
+@media screen and (max-width: 700px) {
+   .intro p {
+       width: 80vw;
+   }
+}
 
 
 
