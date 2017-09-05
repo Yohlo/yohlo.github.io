@@ -38,15 +38,15 @@ body {
 
 /* HEADER */
 .header {
-    width: 25vw;
+    width: 25rem;
     margin: 0 auto; 
-    height: 1vw; 
+    height: 1rem; 
     border-bottom: 2px solid black; 
     text-align: center
 }
 
 .name {
-    font-size: 2vw; 
+    font-size: 2rem; 
     background-color: #F3F5F6;
     padding: 0 10px;
 }
@@ -63,7 +63,7 @@ body {
 }
 
 .experience-image {
-    height: 20vh;
+    height: 15rem;
     width: auto;
     border-radius: 50%;
     vertical-align: top;
@@ -79,6 +79,14 @@ body {
    .helper { 
     display: none;   
   }
+  .experience-image {
+      width: 80%;
+      margin: 0 auto;
+  }
+  .experience-info {
+      width: 80%;
+      margin: 0 auto;
+  }
 }
 
 .experience-title {
@@ -90,7 +98,7 @@ body {
     margin: auto;
     vertical-align: middle;
     text-align: left;
-    font-size: 1.5vh;
+    font-size: 1rem;
 }
 
 .work-info {
@@ -125,7 +133,7 @@ body {
 .intro {
     height: auto;
     background-color:whitesmoke;
-    font-size:1.5vh;
+    font-size:1rem;
     padding: 10px;
     text-align: center;
 }
