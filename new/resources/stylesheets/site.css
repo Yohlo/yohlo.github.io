@@ -38,15 +38,15 @@ body {
 
 /* HEADER */
 .header {
-    width: 50vh;
+    width: 25vw;
     margin: 0 auto; 
-    height: 2vh; 
+    height: 1vw; 
     border-bottom: 2px solid black; 
     text-align: center
 }
 
 .name {
-    font-size: 4vh; 
+    font-size: 2vw; 
     background-color: #F3F5F6;
     padding: 0 10px;
 }
@@ -57,7 +57,7 @@ body {
 }
 
 .experience {
-	width: 90vh;
+	width: 60vw;
     margin: 0 auto;
     text-align: left;
 }
@@ -131,7 +131,7 @@ body {
 }
 
 .intro p {
-    width: 60vh;
+    width: 40vw;
     margin: 0 auto;
     margin-top: 1em;
     margin-bottom: 1em;
