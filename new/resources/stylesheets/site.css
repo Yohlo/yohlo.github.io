@@ -36,6 +36,12 @@ body {
     color: white;
 }
 
+@media screen and (max-width: 780px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
 /* HEADER */
 .header {
     width: 25rem;
