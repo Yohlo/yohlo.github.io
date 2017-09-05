@@ -126,7 +126,7 @@ body {
   min-height:170px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
    .one { 
     float: none;
     margin-right:0;
@@ -141,6 +141,9 @@ body {
     padding-left: 20%;
     padding-right: 20%;
     }
+    .experience-wrapper {
+        width: 90vw;
+      }
 }
 
 /* *** *** *** */
@@ -183,6 +186,55 @@ body {
     margin: auto;
     border-radius: 50%;
 }
+
+.courses {
+    width: 65vw;
+    margin: 0 auto;
+}
+
+.course {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.course-title {
+    margin-top: -0.75rem;
+    margin-bottom: -0.75rem;
+}
+
+.course-left {
+    float:left;
+    width: 30vw;
+    margin-right: 2vw;
+  }
+.course-right { 
+    overflow:hidden;
+    width: 30vw;
+    margin-left: 2vw;
+  }
+  
+.no-border {
+    border: 0 !important;
+}
+
+  @media screen and (max-width: 1000px) {
+     .course-left {
+      float: none;
+      margin-right:0;
+      width:auto;
+      border-bottom: 1px solid gray;
+      margin-top: 1rem;    
+    }
+    .course-right {
+      margin-left:0;
+      width: auto;
+      margin-top: 1rem;
+      border-bottom: 1px solid gray;  
+    }
+    .courses {
+        width: 90vw;
+    }
+  }
 
 @media screen and (max-width: 700px) {
    .intro p {
