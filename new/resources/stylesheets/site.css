@@ -130,7 +130,8 @@ body {
    .one { 
     float: none;
     margin-right:0;
-    width:auto;
+    width: 80vw !important;
+    margin: 0 auto;
     border:0;
     margin-bottom: 5px;
     border-bottom: 1px solid gray;    
@@ -221,13 +222,15 @@ body {
      .course-left {
       float: none;
       margin-right:0;
-      width:auto;
+      width: 80vw !important;
+      margin: 0 auto;
       border-bottom: 1px solid gray;
       margin-top: 1rem;    
     }
     .course-right {
       margin-left:0;
-      width: auto;
+      width: 80vw !important;
+      margin: 0 auto;
       margin-top: 1rem;
       border-bottom: 1px solid gray;  
     }
