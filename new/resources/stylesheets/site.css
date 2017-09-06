@@ -218,6 +218,18 @@ body {
     border: 0 !important;
 }
 
+.footer {
+    height: 30vh;
+    /*background: #678;*/
+}
+
+.copyright {
+    color: #678;
+    text-align: center;
+    padding-top: 0.5vh;
+    padding-bottom: 0.75vh;
+}
+
   @media screen and (max-width: 1000px) {
      .course-left {
       float: none;
