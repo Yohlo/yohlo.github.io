@@ -2,9 +2,8 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: whitesmoke;
-  /*font-family: 'Roboto', sans-serif;*/
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  /*font-family: 'Varela Round', sans-serif;*/
 }
 
 /* *** *** *** */
@@ -42,6 +41,17 @@ body {
     }
 }
 
+/* Main section */
+.main {
+    width: 90vw;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    border-radius: 0.4rem;
+    padding-top: 15vh;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+
 /* HEADER */
 .header {
     width: 25rem;
@@ -63,15 +73,16 @@ body {
 }
 
 .experience {
-	width: 60vw;
+	width: 75%;
     margin: 0 auto;
     text-align: left;
 }
 
 .experience-image {
-    width: 15rem;
+    width: 12.5rem;
     height: auto;
     border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .helper {
@@ -107,7 +118,7 @@ body {
 
 .experience-wrapper {
   overflow:hidden;
-  width: 65vw;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -137,7 +148,7 @@ body {
     border-bottom: 1px solid gray;    
   }
   .experience-image {
-    width: 60%;
+    width: 12.5rem;
     height: auto;
     padding-left: 20%;
     padding-right: 20%;
@@ -167,14 +178,13 @@ body {
 
 .intro {
     height: auto;
-    background-color:whitesmoke;
     font-size:1rem;
     padding: 10px;
     text-align: center;
 }
 
 .intro p {
-    width: 35vw;
+    width: 75%;
     margin: 0 auto;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -185,7 +195,13 @@ body {
     height: auto;
     display: block;
     margin: auto;
+    border: 0.25rem white solid;
+    margin-top: 3vh;
+    margin-bottom: -15vh;
     border-radius: 50%;
+    position: relative;
+    z-index: 100;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .courses {
@@ -219,12 +235,12 @@ body {
 }
 
 .footer {
-    height: 30vh;
+    height: 3vh;
     /*background: #678;*/
 }
 
 .copyright {
-    color: #678;
+    color: whitesmoke;
     text-align: center;
     padding-top: 0.5vh;
     padding-bottom: 0.75vh;
