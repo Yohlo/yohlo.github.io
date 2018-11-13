@@ -1,0 +1,89 @@
+/* Fonts */
+h1,h2,h3 {
+    margin-bottom: 1rem;
+}
+
+/* Section Body changes */
+.home-section .section-body {
+    padding: 2.5rem;
+    margin: 0 auto;
+    max-width: 65rem;
+}
+
+/* Intro Section */
+#intro {
+    padding-top: 2.5rem;
+    padding-bottom: 10rem;
+    color: #fff;
+    text-align: center;
+    background-color: rgb(255, 82, 82);
+}
+
+#intro p {
+    font-size: 1.5rem
+}
+
+#intro h1 {
+    font-size: 2.25rem!important
+}
+
+#intro a {
+    width: 50%;
+    margin: 0 auto
+}
+
+/* Skills Section */
+#skills {
+    margin-top: -10rem;
+    text-align: center
+}
+
+#skills .box section {
+    margin: 2rem 0
+}
+
+.skills-heading {
+    margin: .5rem!important;
+    color: #ff5252
+}
+
+#skills p {
+    margin: 0;
+    padding: 0
+}
+
+#skills ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+/* Footer Section */
+#footer {
+    background-color: rgb(255, 82, 82);
+    padding-top: 7.5rem
+}
+
+#footer,
+#footer a svg {
+    color: #fff;
+    text-align: center
+}
+
+#footer a svg {
+    height: 1.5rem;
+    width: 2.25rem;
+    padding: .25rem 0;
+    margin: 5px;
+    border: 2px solid #ff867f;
+    border-radius: .25rem;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+#footer a svg:hover {
+    color: #ff5252;
+    background-color: #fff;
+    border-color: #fff
+}
