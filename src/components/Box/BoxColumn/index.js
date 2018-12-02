@@ -1,16 +1,11 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import './styles.css';
-
-type Props = {
-    className?: string,
-    children: ReactNode
-}
 
 /**
  * BoxColumn :: Column / element in the box.
  * @param props See Props type definition above
  */
-const BoxColumn = (props: Props) => (
+const BoxColumn = (props) => (
     <article className={props.className || ""}>
         {props.children}
     </article>

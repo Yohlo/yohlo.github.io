@@ -3,11 +3,15 @@
     display: flex;
     -ms-flex-direction: row;
     flex-direction: row;
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--border-color);
     border-radius: 1rem;
     -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .2);
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .2);
-    background-color: #fff;
+    background-color: var(--lighter-background-color)
+}
+
+.box svg {
+    color: var(--accent-color);
 }
 
 @media only screen and (max-width:750px) {

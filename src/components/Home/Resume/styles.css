@@ -58,7 +58,7 @@
 
 .resume-section-item h3 {
     margin-bottom: 0;
-    color: #ff5252
+    color: var(--accent-color);
 }
 
 .resume-section-item h4 {
@@ -110,5 +110,5 @@
 
 .resume-button:hover {
     cursor: pointer;
-    border-color: #ff5252
+    border-color: var(--accent-color);
 }

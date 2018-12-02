@@ -11,7 +11,7 @@ import * as solidIcons from '@fortawesome/free-solid-svg-icons';
 import files from '../../../files';
 
 // Style that is applied to the font-awesome icon in the download button
-const iconSpanStyle = {fontSize: "8rem", color: "rgb(255, 82, 82)"};
+const iconSpanStyle = {fontSize: "8rem"};
 
 /**
  * Resume Section Component
@@ -21,6 +21,10 @@ const Resume = () => (
     <Section id="resume" className="home-section" title="Resume">
         <Section id="work-experience" className="resume-section" title="Work Experience" headerLevel={2}>
             <div className="resume-section-body">
+                <article className="resume-section-item">
+                    <h3>Exxon Mobil Corporation</h3>
+                    <h4><i>Software Engineering Intern</i>, May 2019 - August 2019</h4>
+                </article>
                 <article className="resume-section-item">
                     <h3>Exxon Mobil Corporation</h3>
                     <h4><i>Software Engineering Intern</i>, May 2018 - August 2018</h4>

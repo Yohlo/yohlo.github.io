@@ -1,0 +1,40 @@
+.info {
+    width: 55vw;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 7.5vh;
+    padding-top: 1rem;
+    background-color: #484244;
+    border-radius: 6px;
+    font-family: 'VT323', monospace;
+    text-align: left;
+    -webkit-box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, .2);
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, .2);
+}
+
+.info-body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 1rem;
+    margin: 0 auto;
+    height: 100%;
+    overflow: hidden;
+}
+
+.info-text {
+    height: 40vh;
+    width: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    padding-right: 3rem; /* Increase/decrease this value for cross-browser compatibility */
+    box-sizing: content-box; /* So the width will be 100% + 17px */
+}
+
+.info-text p {
+    font-size: 1rem !important;
+    margin: 3px auto;
+}
+
+.info-carret {
+    font-size: 1rem;
+}
