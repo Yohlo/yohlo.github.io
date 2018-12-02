@@ -1,6 +1,5 @@
 .info {
-    width: 55vw;
-    height: 100%;
+    width: 45rem;
     margin: 0 auto;
     margin-top: 7.5vh;
     padding-top: 1rem;
@@ -22,7 +21,7 @@
 }
 
 .info-text {
-    height: 40vh;
+    height: 22.5rem;
     width: 100%;
     overflow-y: scroll;
     scroll-behavior: smooth;
@@ -37,4 +36,10 @@
 
 .info-carret {
     font-size: 1rem;
+}
+
+@media only screen and (max-width:800px) {
+    .info {
+        width: 100%;
+    }
 }
