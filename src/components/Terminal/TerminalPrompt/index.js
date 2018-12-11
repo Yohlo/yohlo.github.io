@@ -9,7 +9,8 @@ const _ = fun.wildcard;
 
 const math_it_up = {
     '+': function (x, y) { return x + y },
-    '-': function (x, y) { return x - y }
+    '-': function (x, y) { return x - y },
+    '*': function (x, y) { return x * y }
 };
 
 const commands = {
@@ -24,10 +25,9 @@ const commands = {
 };
 
 class TerminalPrompt extends Component {
-
-
     constructor(props) {
         super(props);
+        this.props = props;
 
         this.handleKeyPress = this.handleKeyPress.bind(this);
         this.handleChange = this.handleChange.bind(this);
@@ -42,6 +42,7 @@ class TerminalPrompt extends Component {
         };
 
         this.match = fun(
+            [/\s+(.*)\s+/, (str) => this.match(str.trim())],
             [Number, (n) => n],
             // WIP Math Lmao
             /*[/((\d*)\s*([-+*])\s*(\d*))/, (str) => {
@@ -51,6 +52,9 @@ class TerminalPrompt extends Component {
                         x, op, y
                     });
                 });
+
+                //matches = sortObj(matches);
+
                 var total = 0;
                 for (var i in matches) {
                     if(!matches[i].x) {
@@ -61,7 +65,7 @@ class TerminalPrompt extends Component {
                 }
                 return total;
             }],*/
-            [/help/, () => {
+            [/^help$/, () => {
                 var maxLength = 0;
                 var result = []
                 for (var key in commands) {
@@ -83,17 +87,21 @@ class TerminalPrompt extends Component {
                 this.props.toggleDarkTheme();
                 return "Theme toggled.";
             }],
-            [/resume/, () => {
+            [/^resume$/, () => {
                 setTimeout(() => {
                     document.getElementById('resume').scrollIntoView({behavior: 'smooth', block: 'start'});
                 }, 100);
                 return "Scrolling to resume.";
             }],
-            [/linkedin/, () => <a href="https://www.linkedin.com/in/kyle-yohler-a41066138/" target="_blank" rel="noopener noreferrer">Kyle's Linkedin</a>],
-            [/email/, () => <a href="mailto:yohlerkyle@gmail.com" target="_blank" rel="noopener noreferrer">Kyle's Email</a>],
-            [/github/, () => <a href="https://github.com/Yohlo" target="_blank" rel="noopener noreferrer">Kyle's GitHub</a>],
+            [/^linkedin$/, () => <a href="https://www.linkedin.com/in/kyle-yohler-a41066138/" target="_blank" rel="noopener noreferrer">Kyle's Linkedin</a>],
+            [/^email$/, () => <a href="mailto:yohlerkyle@gmail.com" target="_blank" rel="noopener noreferrer">Kyle's Email</a>],
+            [/^github$/, () => <a href="https://github.com/Yohlo" target="_blank" rel="noopener noreferrer">Kyle's GitHub</a>],
+            [/^clear$/, () => { 
+                this.setState({ output: ["type \"help\" for a list of commands"] });
+                return;
+            }],
             [/^(\s*)$/, () => { return; }],
-            [/rm -rf \//, () => document.documentElement.innerHTML=""], // A little easter egg :)
+            [/^rm -rf \/$/, () => document.documentElement.innerHTML=""], // A little easter egg :)
             [String, (str) => str + ": Command not found. \ntype \"help\" for a list of commands"]
         );
 
@@ -140,7 +148,6 @@ class TerminalPrompt extends Component {
 
     // For detecting arrow keys
     handleKeyDown(e) {
-        console.log(this.state.historyPointer);
         switch(e.key) {
             case 'ArrowUp':
                 if(this.state.historyPointer >= -1 && this.state.historyPointer < this.state.history.length) {
@@ -173,7 +180,7 @@ class TerminalPrompt extends Component {
 
     render() {
         return (
-            <div ref={(ref) => this.textRef = ref} id="terminal-text" className="info-text">
+            <div onClick={() => this.inputRef.focus()} ref={(ref) => this.textRef = ref} id="terminal-text" className="info-text">
                     {
                         this.state.output.map((item, i) => (
                             <p key={"text-" + i}>{item}</p>
@@ -183,7 +190,8 @@ class TerminalPrompt extends Component {
                         <span className="info-carret">&lambda;&nbsp;</span>
                         <input 
                             ref={(ref) => this.inputRef = ref}
-                            id="terminal-input" 
+                            id="terminal-input"
+                            autoComplete="off" autoCorrect="off" autoCapitalize="off" spellCheck={false}
                             type="text" 
                             value={this.state.input || ""}
                             onChange={this.handleChange}

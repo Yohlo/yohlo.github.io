@@ -27,6 +27,12 @@ const Home = () => (
             <h1>Hi, I'm Kyle Yohler.</h1>
             <p>I'm a full stack developer pursuing a Masters degree in Computer Science at Indiana University. By applying myself both academically and professionally, I've become a confident developer with a diverse skillset. I am always looking for more challenges in order to improve these skills and learn new things.</p>
             <Terminal />
+            <FontAwesomeIcon id="down-arrow" className="down-arrow bounce" icon={solidIcons.faArrowDown} size='2x'
+                onClick={() => setTimeout(() => {
+                    document.getElementById('skills').scrollIntoView({behavior: 'smooth', block: 'start'});
+                    document.getElementById('down-arrow').classList.add('no-display');
+                }, 100)}
+            />
         </Section>
 
         {/*
