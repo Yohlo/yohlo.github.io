@@ -76,6 +76,12 @@ h1,h2,h3 {
     }
 }
 
+@media only screen and (max-width:750px) {
+    .down-arrow {
+        display: none;
+    }
+}
+
 /* Skills Section */
 #skills {
     margin-top: -10rem;
