@@ -66,6 +66,11 @@
     margin-bottom: 0
 }
 
+.resume-section-item p a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
 .resume-button-link {
     text-decoration: none
 }

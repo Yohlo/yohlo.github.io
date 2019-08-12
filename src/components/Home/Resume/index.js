@@ -24,6 +24,12 @@ const Resume = () => (
                 <article className="resume-section-item">
                     <h3>Exxon Mobil Corporation</h3>
                     <h4><i>Software Engineering Intern</i>, May 2019 - August 2019</h4>
+                    <ul>
+                        <li>Worked on large-scale application that provides competitive insight for the business line. </li>
+                        <li>Leveraged MuleSoft platform in order to automate manual processes and remove data integrity issues from a key business tool. </li>
+                        <li>Worked with developers around the company in order to deliver onboarding materials, DevOps practices tutorials and brand styling tools.</li>
+                        <li>Co-lead community of React developers and gave tech demo on new library features.</li>
+                    </ul>
                 </article>
                 <article className="resume-section-item">
                     <h3>Exxon Mobil Corporation</h3>
@@ -91,6 +97,31 @@ const Resume = () => (
                 <article className="resume-section-item">
                     <h3>Indiana University</h3>
                     <h4><i>Masters of Science in Computer Science</i>, May 2020</h4>
+                </article>
+            </div>
+        </Section>
+
+        <Section id="projects" className="resume-section" title="Notable Projects" headerLevel={2}>
+            <div className="resume-section-body">
+                <article className="resume-section-item">
+                    <h3>Grading Tool/Autograder</h3>
+                    <p><i>An autograder created for IU's CSCI-B351 Intro to AI course</i></p>
+                    <p><a href="https://github.com/Yohlo/grading-tool-site">Front-end with React.js on GitHub</a></p>
+                    <p><a href="https://github.com/Yohlo/grading-tool-server">Back-end with Python+Flask on GitHub</a></p>
+                </article>
+                <article className="resume-section-item">
+                    <h3>React Hooks Demo</h3>
+                    <p><i>React Hooks demo given, by me, to ExxonMobil's React developer community</i></p>
+                    <p><a href="https://github.com/Yohlo/react-hooks-demo">Available on GitHub</a></p>
+                </article>
+                <article className="resume-section-item">
+                    <h3>kyleyohler.dev</h3>
+                    <p><i>This site! Built from scratch with React.js</i></p>
+                    <p><a href="https://github.com/Yohlo/yohlo.github.io/tree/source">Available on GitHub</a></p>
+                </article>
+                <article className="resume-section-item">
+                    <h3>Everything Else</h3>
+                    <p><i>More is available on my <a href="https://github.com/Yohlo">GitHub</a></i></p>
                 </article>
             </div>
         </Section>
