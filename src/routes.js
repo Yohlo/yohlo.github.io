@@ -2,15 +2,14 @@ import React  from "react";
 import { Route } from "react-router-dom";
 import Layout from './components/Layout';
 import Home from './components/Home';
-import Terminal from './components/Terminal';
-
-
-// only one route currently. will be expanded upon
+import Blog from "./components/Blog";
+import Post from "./components/Blog/Post";
 
 const routes = (
-    <Layout>
+     <Layout>
           <Route exact path={'/'} component={() => <Home />} />
-          <Route exact path={'/Terminal'} component={() => <Terminal />} />
+          <Route exact path={'/Blog'} component={() => <Blog />} />
+          <Route path={'/Blog/:post'} component={({ match: { params }}) => <Post name={params.post} />} />
      </Layout>
 );
 
