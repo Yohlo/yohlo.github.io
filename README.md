@@ -1,6 +1,6 @@
 # yohlo.github.io
 Website
 
-https://yohlo.me
+https://kyleyohler.dev
 
 Source code is available in the `source` branch
