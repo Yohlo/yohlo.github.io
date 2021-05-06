@@ -54,6 +54,11 @@
     color: var(--accent-color);
 }
 
+#grading-tool-header  {
+    /* Add a little emphasis :) */
+    font-size: 1.5rem;
+}
+
 .resume-section-item h4 {
     margin-top: 0;
     margin-bottom: 0

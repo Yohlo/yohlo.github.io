@@ -22,11 +22,32 @@ const Resume: React.FC = () => (
             <div className="resume-section-body">
                 <article className="resume-section-item">
                     <h3>Exxon Mobil Corporation</h3>
-                    <h4><i>Software Developer</i>, July 2020 - Present</h4>
+                    <h4><i>Full-Stack Software Developer</i>, July 2020 - Present</h4>
                     <ul>
-                        <li>Help design, develop and maintain React.js implementation of company-branded design system.</li>
+                        <li>Lead developer for proprietary application that integrates with ArcGIS maps and features to provide geolocation based search and analytics. Full-stack project with Angular, Typescript, a .NET Core API for user management, and a Python search API hosted on OpenShift.</li>
+                        <li>Lead developer and maintainer of React.js implementation of company-branded design system used in hundreds of internal applications.</li>
+                        <li>Develop and maintain content distribution system with social engagement and collaboration features. Full-stack project with Angular, Typescript and a .NET Core API hosted on Azure.</li>
+                        <li>Led evolving source-control strategy by migrating repositories, work items, CI/CD solutions and package distribution to GitHub Enterprise for select internally open-sourced applications.</li>
                         <li>Mentoring whole teams and individual developers on general React.js development alongside internal tools.</li>
-                        <li>Assist development of content distribution system with social engagement and collaboration features.</li>
+                    </ul>
+                </article>
+                <article className="resume-section-item">
+                    <h3>Indiana University School of Informatics, Computing, and Engineering</h3>
+                    <h4><i>Undergraduate Instructor</i>, August 2017 - May 2020</h4>
+                    <ul>
+                        <li>Developed an online autograding system with heavy focus on teaching basics of git, CI/CD and DevOps to students as they submit assignments. Developed with React.js and Python, hosted securely on university-owned Linux VM and responsible for monitoring, tracking and grading student assignments.</li>
+                        <li>Managed self-developed autograder for introductory AI course and core CS course for data structures and algorithms. Autograder is still in use as of Spring 2021 semester.</li>
+                        <li>Head associate instructor for AI course with heavy Python programming components, lead collaboration between team of instructors.</li>
+                    </ul>
+                </article>
+                <article className="resume-section-item">
+                    <h3>Indiana Secretary of State's Office</h3>
+                    <h4><i>Full-Stack Developer</i>, May 2017 - January 2020</h4>
+                    <ul>
+                        <li>Worked on modernizing the front-end look of older ASP.NET web applications. </li>
+                        <li>Implemented changes to the back-end of an application used by hundreds of state officials such as an administrative dashboard, digital payment processes, automated usage reports, etc.</li>
+                        <li>Managed large databases with critical data used by the Secretary’s business, auto dealer and elections divisions.</li>
+                        <li>Worked remotely in order to deliver updates to key projects.</li>
                     </ul>
                 </article>
                 <article className="resume-section-item">
@@ -50,26 +71,7 @@ const Resume: React.FC = () => (
                 </article>
                 <article className="resume-section-item">
                     <h3>Indiana University School of Informatics, Computing, and Engineering</h3>
-                    <h4><i>Undergraduate Instructor</i>, August 2017 - May 2020</h4>
-                    <ul>
-                        <li>Assisted in teaching AI course with heavy Python programming components, CSCI-B351 Intro to Artificial Intelligence.</li>
-                        <li>Head associate instructor for multiple semesters, lead collaboration between team of instructors.</li>
-                        <li>Developed an online autograding system with heavy focus on teaching basics of git, CI/CD and DevOps to students as they submit assignments.</li>
-                    </ul>
-                </article>
-                <article className="resume-section-item">
-                    <h3>Indiana Secretary of State's Office</h3>
-                    <h4><i>Summer Fellow (CS Intern)</i>, April 2017 - Present</h4>
-                    <ul>
-                        <li>Worked on modernizing the front-end look of older ASP.NET web applications. </li>
-                        <li>Implemented changes to the back-end of an application used by hundreds of state officials such as an administrative dashboard, digital payment processes, automated usage reports, etc.</li>
-                        <li>Managed large databases with critical data used by the Secretary’s business, auto dealer and elections divisions.</li>
-                        <li>Worked remotely in order to deliver updates to key projects.</li>
-                    </ul>
-                </article>
-                <article className="resume-section-item">
-                    <h3>Indiana University School of Informatics, Computing, and Engineering</h3>
-                    <h4><i>Service Desk Consultant</i>, March 2017 - Present</h4>
+                    <h4><i>Service Desk Consultant</i>, March 2017 - May 2019</h4>
                     <ul>
                         <li>Accountable for resolution of user requests and incident management for faculty, staff, students and partners.</li>
                         <li>Communicate with IT professionals in order to provide outstanding support.</li>
@@ -106,10 +108,15 @@ const Resume: React.FC = () => (
         <Section id="projects" className="resume-section" title="Notable Projects" headerLevel={2}>
             <div className="resume-section-body">
                 <article className="resume-section-item">
-                    <h3>Grading Tool/Autograder</h3>
-                    <p><i>An autograder created for IU's CSCI-B351 Intro to AI course</i></p>
-                    <p><a href="https://github.com/Yohlo/grading-tool-site">Front-end with React.js on GitHub</a></p>
-                    <p><a href="https://github.com/Yohlo/grading-tool-server">Back-end with Python+Flask on GitHub</a></p>
+                    <h3 id="grading-tool-header">Grading Tool/Autograder</h3>
+                    <p><i>Autograder created for IU's CSCI-B351 Intro to AI course</i></p>
+                    <ul>
+                        <li>An automated grading system that integrates directly with GitHub Enterprise and Canvas in order to manage, distribute and grade student programming assignments.</li>
+                        <li>Simulates a CI/CD pipeline with push-triggered student assignment "builds" that pass or fail syntax checks, compilation or runtime errors before allowing a student to submit their assignment to the full test suite for accuracy checks.</li>
+                        <li>Sandboxed submission grading and git-based storage of tools and test cases allow for uninterruptable job queue for failed or malicious submissions.</li>
+                        <li>Provides tools for students and instructors to track and interrogate progress and changes to assignments throughout semester. Additional administrative tools to monitor for suspicious submissions.</li>
+                        <li>Full-stack project written from scratch using React, Flask, PostgreSQL and a Redis task queue. Heavily utilizes Linux system architecture.</li>
+                    </ul>
                 </article>
                 <article className="resume-section-item">
                     <h3>React Hooks Demo</h3>

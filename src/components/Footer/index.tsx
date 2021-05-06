@@ -18,7 +18,7 @@ const Footer: React.FC = () => (
                 <FontAwesomeIcon icon={regularIcons.faEnvelope} />
             </a>
             <p>
-                <i>Nov. 2020</i>
+                <i>May 2021</i>
             </p>
         </Section>
     </footer>
